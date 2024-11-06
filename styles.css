@@ -1,1 +1,22 @@
 /*  your css code here. If applicable */
+#container {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: to visually define the container */
+}
+
+/* Pseudo-element for content before the container */
+#container::before {
+    content: "Content inserted before ";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    display: block;
+}
+
+/* Pseudo-element for content after the container */
+#container::after {
+    content: " Content inserted after";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    display: block;
+}
